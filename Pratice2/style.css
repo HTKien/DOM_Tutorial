@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li img {
+    width: 100px;
+    cursor: pointer;
+}
+
+ul,
+#main-img {
+    float: left;
+}
+
+#main-img img {
+    width: 409px;
+    margin-top: 16px;
+    margin-left: 10px;
+}

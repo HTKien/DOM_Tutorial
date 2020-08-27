@@ -1,0 +1,82 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+div.container {
+    width: 700px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+}
+
+div.container h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+div.container ul.tab {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+div.container ul.tab li {
+    background-color: #b14c38;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+div.container ul.product-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+div.container ul.product-list li img {
+    width: 220px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b14c38;
+}
+
+#new,
+#best-sell {
+    display: none;
+}
+
+#new,
+#trend,
+#best-sell {
+    -webkit-animation: slide-down .3s ease-out;
+    -moz-animation: slide-down .3s ease-out;
+    -webkit-animation: slide-down .3s ease-in;
+    -moz-animation: slide-down .3s ease-in;
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+    ;
+    20% {
+        opacity: 1;
+    }
+}
+
+div.container ul.tab li:hover {
+    background-color: #ee4d2d;
+}

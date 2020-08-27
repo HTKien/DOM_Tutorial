@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lọc sản phẩm </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Danh sách sản phẩm</h1>
+        <ul class="tab">
+            <li onclick="changeProductList('trend', this)" style="background-color: #ee4d2d" class="tab-item active">Phổ biến</li>
+            <li onclick="changeProductList('new', this)" class="tab-item">Mới nhất</li>
+            <li onclick="changeProductList('best-sell',this)" class="tab-item">Bán chạy</li>
+        </ul>
+        <div id="trend" class="animation">
+            <ul class="product-list">
+                <li><img src="./images/a1.jpg" alt=""></li>
+                <li><img src="./images/a3.jpg" alt=""></li>
+                <li><img src="./images/a2.jpg" alt=""></li>
+                <li><img src="./images/a4.jpg" alt=""></li>
+                <li><img src="./images/a5.jpg" alt=""></li>
+                <li><img src="./images/a6.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div id="new" class="animation">
+            <ul class="product-list">
+                <li><img src="./images/a6.jpg" alt=""></li>
+                <li><img src="./images/a2.jpg" alt=""></li>
+                <li><img src="./images/a4.jpg" alt=""></li>
+                <li><img src="./images/a3.jpg" alt=""></li>
+                <li><img src="./images/a5.jpg" alt=""></li>
+                <li><img src="./images/a1.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div id="best-sell" class="animation">
+            <ul class="product-list">
+                <li><img src="./images/a4.jpg" alt=""></li>
+                <li><img src="./images/a5.jpg" alt=""></li>
+                <li><img src="./images/a3.jpg" alt=""></li>
+                <li><img src="./images/a1.jpg" alt=""></li>
+                <li><img src="./images/a6.jpg" alt=""></li>
+                <li><img src="./images/a2.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./js/common.js"></script>
+</body>
+
+</html>
